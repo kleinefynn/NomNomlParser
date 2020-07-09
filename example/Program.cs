@@ -10,7 +10,7 @@ namespace NomNoml
         private static void Main(string[] args)
         {
             var input =
-                UmlFileIO.LoadUmlFromFile("stuff.txt");
+                UmlFileIO.LoadUmlFromFile("input.txt");
 
             
             var classes = NomNomlLanguageParser.Parse<CSharpLanguage>(input);
