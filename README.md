@@ -68,11 +68,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo`, `twitter_handle`, `email`
+A simple Parser to parse NomNoml-UML diagrams and convert them to supported languages. 
+Right now in beta and can only produce CSharp code.
+Class interactions (dependency, generalization etc.) aren't supported yet.
 
 
 ### Built With
@@ -83,12 +81,13 @@ Here's a blank template to get started:
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-1. Download and copy the /src folder into your project
-2. add `using NomNoml.Languages` and `using NomNoml.Parser` into your code
-3. Load the NomNoml text into a string
-4. call `NomNomlLanguageParser.Parse<[Language to parse to]>([name of your string variable])`
-5. use the classes the function `Parse` returns
-6. Profit
+1. Install Antlr4.8-Runtime (can be found on nuget)
+2. Download and copy the /src folder into your project
+3. add `using NomNoml.Languages` and `using NomNoml.Parser` into your code
+4. Load the NomNoml text into a string
+5. call `NomNomlLanguageParser.Parse<[Language to parse to]>([name of your string variable])`
+6. use the classes the function `Parse` returns
+7. Profit
 
 
 <!-- ROADMAP -->
